@@ -1,24 +1,95 @@
 @import "bootstrap/scss/bootstrap";
 
 
-body{ 
-    background-color: #e9f0f8
-}
-.header{
-    background-color: #F6F5F2
+body {
+  background-color: #e9f0f8;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.profile-img img{
-  width: 75%;
+.current{
+  a {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: purple;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+}
+
+
+.header {
+  background-color: #F6F5F2;
+}
+
+.current {
+  background-color: #F6F5F2;
+}
+
+.tech {
+  text-align: center;
+}
+
+.profile-img img {
+  width: 65%;
   height: auto;
   border-radius: 25px;
 }
 
-.capture-img img{
+.capture-img img {
   width: 100%;
   height: auto;
 }
 
-.current, .sunset{
+.current,
+.sunset,
+.tech {
   padding: 50px 0;
+}
+
+.small-sect {
+  padding: 25px 0;
+}
+
+.line-box {
+  text-align: center;
+}
+
+.line {
+  border-top: 1px dashed black;
+}
+
+.tech-list {
+  list-style-position: inside;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .profile-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile {
+    text-align: center;
+  }
+  .profile-img img {
+    width: 65%;
+    height: auto;
+    border-radius: 25px;
+  }
 }
